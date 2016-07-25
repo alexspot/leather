@@ -1,23 +1,13 @@
-<% @products.each_slice(3) do |product_row| %>
-    <div class="row shop_box-top">
-      <% product_row.each do |product| %>
-          <div class="col-md-3 shop_box"><a href="single.html">
-            <%= image_tag(product.pictures.first.image, class: 'img-responsive', alt: '') %>
-            <span class="new-box">
-                  <span class="new-label">New</span>
-                </span>
-            <div class="shop_desc">
-              <h3><%= product.title %></h3>
-              <p><%= truncate(product.description, length: 35) %></p>
-              <span class="reducedfrom">$66.00</span>
-              <span class="actual">$<%= product.price %></span><br>
-              <ul class="buttons">
-                <li class="cart"><a href="#">Add To Cart</a></li>
-                <li class="shop_btn"><a href="#">Read More</a></li>
-                <div class="clear"> </div>
-              </ul>
-            </div>
-          </a></div>
+<div class="main">
+  <div class="shop_top">
+    <div class="container">
+      <% @products.each_slice(4) do |product_row| %>
+          <div class="row shop_box-top">
+            <% product_row.each do |product| %>
+              <%= render "product_row", product: product, order_item: @order_item %>
+            <% end %>
+          </div>
       <% end %>
     </div>
-<% end %>
+  </div>
+</div>

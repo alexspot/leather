@@ -38,4 +38,21 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+
+  config.model 'Product' do
+    edit do
+      field :title
+      field :description
+      field :price
+      field :pictures
+    end
+  end
+
+  config.model 'Picture' do
+    edit do
+      field :image do
+        label 'Image'
+      end
+    end
+  end
 end

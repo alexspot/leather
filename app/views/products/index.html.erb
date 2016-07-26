@@ -1,0 +1,13 @@
+<div class="main">
+  <div class="shop_top">
+    <div class="container">
+      <% @products.each_slice(4) do |product_row| %>
+          <div class="row shop_box-top">
+            <% product_row.each do |product| %>
+              <%= render "product_row", product: product, order_item: @order_item %>
+            <% end %>
+          </div>
+      <% end %>
+    </div>
+  </div>
+</div>

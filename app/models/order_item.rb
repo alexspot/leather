@@ -7,6 +7,7 @@ class OrderItem < ApplicationRecord
   validate :order_present
 
   before_save :finalize
+  # after_initialize :set_default_quantity
 
   def unit_price
     if persisted?
@@ -36,5 +37,9 @@ class OrderItem < ApplicationRecord
   def finalize
     self[:unit_price] = unit_price
     self[:total_price] = quantity * self[:unit_price]
+  end
+
+  def set_default_quantity
+    self.quantity = 1
   end
 end

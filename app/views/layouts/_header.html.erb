@@ -40,7 +40,27 @@
               new UISearch( document.getElementById( 'sb-search' ) );
           </script>
           <!----//search-scripts---->
-
+          <ul class="icon1 sub-icon1 profile_img">
+            <li><a class="active-icon c1" href="#"> </a>
+              <ul class="sub-icon1 list">
+                <div class="product_control_buttons">
+                  <a href="#"><%= image_tag('images/edit.png') %></a>
+                  <a href="#"><%= image_tag('images/close_edit.png') %></a>
+                </div>
+                <div class="clear"></div>
+                <li class="list_img"><%= image_tag('images/1.jpg') %></li>
+                <li class="list_desc"><h4><a href="#">velit esse molestie</a></h4><span class="actual">1 x
+                          $12.00</span></li>
+                <div class="login_buttons">
+                  <div class="check_button"><a href="checkout.html">Check out</a></div>
+                  <div class="login_button"><a href="login.html">Login</a></div>
+                  <h1 class="cart-text"><%= render 'layouts/cart_text' %></h1>
+                  <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+              </ul>
+            </li>
+          </ul>
           <div class="clear"></div>
         </div>
       </div>

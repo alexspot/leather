@@ -4,18 +4,17 @@
       <div class="col-md-12">
         <div class="header-left">
           <div class="logo">
-
-            <a href="index.html"><%= image_tag('images/logo.png') %></a>
+            <a href="#"><%= image_tag('images/logo.png') %></a>
           </div>
           <div class="menu">
             <a class="toggleMenu" href="#"><%= image_tag('images/nav.png') %></a>
             <ul class="nav" id="nav">
               <li><%= link_to('Shop', shop_path) %></li>
-              <li><a href="team.html">Team</a></li>
-              <li><a href="experiance.html">Events</a></li>
-              <li><a href="experiance.html">Experiance</a></li>
-              <li><a href="shop.html">Company</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><%= link_to('Team', root_path) %></li>
+              <li><%= link_to('Events', root_path) %></li>
+              <li><%= link_to('Experience', root_path) %></li>
+              <li><%= link_to('Company', root_path) %></li>
+              <li><%= link_to('Contact', root_path) %></li>
               <div class="clear"></div>
             </ul>
             <!--<script type="text/javascript" src="js/responsive-nav.js"></script>-->
@@ -52,8 +51,8 @@
                 <li class="list_desc"><h4><a href="#">velit esse molestie</a></h4><span class="actual">1 x
                           $12.00</span></li>
                 <div class="login_buttons">
-                  <div class="check_button"><a href="checkout.html">Check out</a></div>
-                  <div class="login_button"><a href="login.html">Login</a></div>
+                  <div class="check_button"><a href="#">Check out</a></div>
+                  <div class="login_button"><a href="#">Login</a></div>
                   <h1 class="cart-text"><%= render 'layouts/cart_text' %></h1>
                   <div class="clear"></div>
                 </div>

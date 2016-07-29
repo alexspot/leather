@@ -3,24 +3,24 @@ development:
   encoding: unicode
   database: leather_development
   pool: 5
-  username: postgres
-  password: qwerty
-  host: localhost
+  username: rmumbmyvupqsvb
+  password: jcN1dobxaNCL3uuFQ6ci7j3GKt
+  host: c2-54-217-244-3.eu-west-1.compute.amazonaws.com
 
 test:
   adapter: postgresql
   encoding: unicode
   database: leather_test
   pool: 5
-  username: postgres
-  password: qwerty
-  host: localhost
+  username: rmumbmyvupqsvb
+  password: jcN1dobxaNCL3uuFQ6ci7j3GKt
+  host: c2-54-217-244-3.eu-west-1.compute.amazonaws.com
 
 production:
   adapter: postgresql
   encoding: unicode
   database: leather_production
   pool: 5
-  username: postgres
-  password: qwerty
-  host: localhost
+  username: rmumbmyvupqsvb
+  password: jcN1dobxaNCL3uuFQ6ci7j3GKt
+  host: c2-54-217-244-3.eu-west-1.compute.amazonaws.com

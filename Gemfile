@@ -13,6 +13,7 @@ gem 'carrierwave', require: 'carrierwave'
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
 gem 'pg'
+gem 'jquery-ui-rails'
 
 
 group :development, :test do

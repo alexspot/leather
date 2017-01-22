@@ -1,0 +1,30 @@
+<% if order_items.empty? %>
+  <div class="container-fluid small-cart">
+    <h4 class="title">Shopping cart is empty</h4>
+    <p class="cart">You have no items in your shopping cart</p>
+  </div>
+<% else %>
+  <div class="container-fluid small-cart">
+    <div class="col-md-8">
+      <h3>Your cart</h3>
+      <table class="table table-hover">
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+        <% order_items.each_with_index do |order_item, index| %>
+            <tr>
+              <td><%= index+1 %></td>
+              <td><%= order_item.product.title %></td>
+              <td class="quantity"><%= order_item.quantity %></td>
+              <td><%= order_item.product.price * order_item.quantity %></td>
+            </tr>
+        <% end %>
+      </table>
+      <h1 class="cart-text"><%= render 'layouts/cart_text' %></h1>
+    </div>
+  </div>
+<% end %>
+

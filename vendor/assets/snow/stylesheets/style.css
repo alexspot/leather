@@ -1,4 +1,7 @@
 .clear{clear: both;}
+td.quantity {
+    text-align: center;
+}
 h4, h5, h6,
 h1, h2, h3 {margin-top: 0;}
 ul, ol {margin: 0;}
@@ -247,7 +250,7 @@ ul.icon1 {
 	color: #fafafa;
 }
 .icon1 ul {
-	width:300px;
+	width:350px;
 	margin: 20px 0 0 0;
 	_margin: 0;
 	opacity: 0;
@@ -1586,7 +1589,7 @@ h4.title {
 	margin-top: 0px;
 	letter-spacing: -1px;
 	text-transform: uppercase;
-	border-bottom: 1px solid #ECECEC;
+	/*border-bottom: 1px solid #ECECEC;*/
 	padding-bottom: 13px;
 }
 .login-page p {
